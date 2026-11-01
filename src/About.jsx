@@ -16,7 +16,7 @@ export default function TemplateDemo() {
         <PageTransition>
 
 
-             <div style={{ 
+        <div style={{ 
           display: 'flex', 
           justifyContent: 'center', 
           alignItems: 'center'
@@ -44,7 +44,7 @@ export default function TemplateDemo() {
          transition={{duration:1}}
           >
           
-              <img src={pr} style={{borderRadius:"50%",width:"15rem",height:"16rem",border:"solid 3px black",marginTop:"1rem",boxShadow:"2pxblack"}} className="pim">
+              <img src={pr} style={{borderRadius:"50%",width:"10rem",height:"10rem",border:"solid 3px black",marginTop:"1rem",boxShadow:"2pxblack",marginBottom:"2rem"}} className="pim">
               </img>
               </motion.div>
 
