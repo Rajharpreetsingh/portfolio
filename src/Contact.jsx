@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import {motion} from "motion/react";
 
-export default function Contact() {
+export default function Contact() 
+{
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -43,6 +45,11 @@ export default function Contact() {
   };
 
   return (
+     <motion.div 
+             initial={{x:1000}}
+             animate={{x:0}}
+             transition={{duration:1}}
+              >
     <div style={styles.container}>
       <h2 style={styles.title}>Contact Me</h2>
       
@@ -110,6 +117,7 @@ export default function Contact() {
         </button>
       </form>
     </div>
+    </motion.div>
   );
 }
 
