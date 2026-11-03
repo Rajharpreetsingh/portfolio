@@ -45,12 +45,14 @@ export default function Contact()
   };
 
   return (
-     <motion.div 
+    <>
+    <motion.div 
              initial={{y:1000}}
-             animate={{x:0}}
+             animate={{y:0}}
              transition={{duration:1}}
               >
     <div style={styles.container}>
+         
       <h2 style={styles.title}>Contact Me</h2>
       
       {status === "success" && (
@@ -116,8 +118,13 @@ export default function Contact()
           {status === "loading" ? "Sending..." : "Send Message"}
         </button>
       </form>
+     
     </div>
-    </motion.div>
+     </motion.div>
+  
+    
+
+    </>
   );
 }
 
