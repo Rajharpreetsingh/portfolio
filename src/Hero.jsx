@@ -3,6 +3,7 @@ import { Button } from 'primereact/button';
 import { Badge } from 'primereact/badge';
 import PageTransition from './PageTransition';
 import { useNavigate } from "react-router-dom";
+
 import pic from "./images/p.png";
 import "./Styles/hero.css"
 import {motion} from "motion/react";
@@ -14,6 +15,7 @@ export default function HeroSection() {
 
   
   return (
+    <>
      <PageTransition>
     <div style={{ 
       minHeight: '75vh', 
@@ -34,9 +36,14 @@ export default function HeroSection() {
       }}>
         
         {/* LEFT COLUMN: CALL TO ACTION TEXT */}
+      
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
        
-          
+             <motion.div 
+                     initial={{y:-100,opacity:0}}
+                     animate={{y:0,opacity:1}}
+                     transition={{duration:1}}
+                      >
           <h1 style={{ 
             fontSize: 'clamp(2.5rem, 5vw, 4rem)', 
             fontWeight: '800', 
@@ -45,11 +52,17 @@ export default function HeroSection() {
             margin: '0',
             letterSpacing: '-0.02em'
           }}>
+           
             Hi, I'am  <span style={{ color: '#6366f1' }}>Rajharpreet Singh</span>
             <br/>
            FullStack Developer
           </h1>
-          
+          </motion.div>
+           <motion.div 
+                     initial={{y:50,opacity:0}}
+                     animate={{y:0,opacity:1}}
+                     transition={{duration:1,delay:0.5}}
+                      >
           <p style={{ 
             fontSize: '1.2rem', 
             color: '#64748b', 
@@ -59,6 +72,8 @@ export default function HeroSection() {
           }}>
             Currently Persuing MCA from Amity University
           </p>
+          </motion.div>
+          
           
           <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem', flexWrap: 'wrap' }}>
             
@@ -99,5 +114,6 @@ export default function HeroSection() {
     </div>
    
     </PageTransition>
+    </>
   );
 }
