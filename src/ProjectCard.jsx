@@ -87,10 +87,7 @@ export default function ProjectCard() {
                    
                         <h4>       {project.name}</h4>
                  
-                        <br></br>
-                        <p> {project.des}</p>
-                          <br></br>
-                          <br></br>
+                       
                           <a href={project.url}>
                         <button type="button" value="View on Github" style={gb}>
                             <div style={{display:"flex" ,gap:"1rem",alignItems:"center",padding:"0.2rem"}}>
