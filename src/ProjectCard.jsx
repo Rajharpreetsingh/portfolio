@@ -9,7 +9,7 @@ export default function ProjectCard() {
     const projects=[
         {
             id:1,name:"Pg Management System",
-            des:"A full-stack web app for managing PG , tenant registration ,room allocations, and occupancy records using PHP and MySQL.",
+            des:"A full-stack web app for managing PG , tenant registration ,room allocations, & occupancy records using PHP and MySQL.",
 
             img:"https://cdn-icons-png.magnific.com/256/13445/13445004.png?semt=ais_white_label",
             
