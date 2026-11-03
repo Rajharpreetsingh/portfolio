@@ -46,7 +46,7 @@ export default function Contact()
 
   return (
      <motion.div 
-             initial={{x:1000}}
+             initial={{y:1000}}
              animate={{x:0}}
              transition={{duration:1}}
               >

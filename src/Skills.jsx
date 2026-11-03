@@ -207,6 +207,22 @@ const Skills = () => {
         {/* Skills Grid */}
         <div className="skills-grid">
           {skills.map((skill) => (
+            skill.name=="Tkinter"?
+            <div className="skill-card" key={skill.name}>
+              <div className="skill-icon">
+                <img
+                  src={`https://customtkinter.tomschimansky.com/img/icon.ico`}
+                  alt={`${skill.name} logo`}
+                  loading="lazy"
+                />
+              </div>
+
+              <div className="skill-name">
+                {skill.name}
+              </div>
+            </div>
+              
+            :
             <div className="skill-card" key={skill.name}>
               <div className="skill-icon">
                 <img
