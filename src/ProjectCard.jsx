@@ -13,7 +13,7 @@ export default function ProjectCard() {
 
             img:"https://cdn-icons-png.magnific.com/256/13445/13445004.png?semt=ais_white_label",
             
-            url:"https://github.com/Rajharpreetsingh/Movie_Explorer_React_App"
+            url:"https://github.com/Rajharpreetsingh/PgManagementSystem"
         }
             
             ,
