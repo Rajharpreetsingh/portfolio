@@ -1,10 +1,9 @@
 
 .internship-certificate {
-    display: block;
+   
     width: 100%;
     max-width: 900px;
     height: auto;
-    
     object-fit: contain;
     border-radius: 0.28rem;
     border: solid black 2px;

@@ -29,7 +29,7 @@ return (
                      transition={{duration:1}}
                       >
                         
-            <img src="https://media.licdn.com/dms/image/v2/D562DAQEomPWbhuVbmw/profile-treasury-image-shrink_1280_1280/B56aF.9fIsIAAY-/0/1793131411393?e=1793739600&v=beta&t=sxS3eDJ6_J8NUf6WvlfooNQTkYOKsAQBCYpv0wh20Ak" className="internship-certificate"/>
+            <img src={ic} className="internship-certificate"/>
              
              </motion.div>
              <div className="card">

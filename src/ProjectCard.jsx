@@ -1,6 +1,7 @@
 
 import React from 'react'; 
 import { Card } from 'primereact/card';
+import './Styles/Projects.css';
 
 
 export default function ProjectCard() {
@@ -36,63 +37,29 @@ export default function ProjectCard() {
         
     ];
 
-    const styles = {
-       
-        backgroundColor: "white",
-       
     
-        marginBottom: "10px",
-        padding: "1rem",
-        color: "gray",
-        boxShadow: "rgb(0,0,0,0.44) 0px 5px 5px",
-        borderRadius:"0.6rem",
-        border:"solid 2px"
-        
-  
-    };
-
-    const img_s ={
-        width:"5rem",
-        height:"5rem",
-        borderRadius:"0.5rem",
-      
-
-    }
-
-    const gb ={
-        
-        backgroundColor:"black",
-        color:"white",
-        width:"10rem",
-        height:"2rem",
-        border:"none",
-        borderRadius:"0.2rem",
-        fontFamily:"Segoe UI"
-
-    }
-
 
     return (
 
         <div className="card flex justify-content-center">
        
             <Card title="Projects"  className="md:w-25rem" >
-                <div style={{display:"grid",justifyContent:"center",gridTemplateColumns: '1fr 1fr 1fr',alignItems:"center",flexDirection:"row",gap:"2rem"}}>
+                <div className="container">
               {
                 projects.map((project)=>{
                     return(
-                   <div key={project.id} style={styles}>
+                   <div key={project.id} className="pcard">
                        <br></br>
-                        <img src={project.img} style={img_s}></img>
+                        <img src={project.img} className="img_s"></img>
                    
-                        <h4>       {project.name}</h4>
+                        <h4>  {project.name}</h4>
                  
                        
                           <a href={project.url}>
-                        <button type="button" value="View on Github" style={gb}>
-                            <div style={{display:"flex" ,gap:"1rem",alignItems:"center",padding:"0.2rem"}}>
-                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png" style={{height:"1.2rem",width:"1.2rem"}}></img>
-                                <span style={{color:"white"}}>View on Github</span>
+                          <button type="button" value="View on Github" className="gb">
+                            <div  className="vgit">
+                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png"  className="gi"></img>
+                                <span className="lab">View on Github</span>
                             </div>
                             
                            </button>
