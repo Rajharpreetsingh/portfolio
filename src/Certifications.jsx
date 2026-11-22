@@ -1,6 +1,7 @@
 import React from 'react';
 import { Panel } from 'primereact/panel';
 import PageTransition from './PageTransition';
+import { Button } from 'primereact/button';
 import c1Image from './images/c1.png';
 import c2aImage from './images/c2-a.png';
 import c2bImage from './images/c2-b.png';
@@ -34,18 +35,26 @@ return (
         <div className="certifications-grid">
             {certificates.map((certificate) => (
                 <Panel key={certificate.id} className="certificate-panel">
-                    <a
-                        href={certificate.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="certificate-link"
-                    >
+                 
                         <img
                             src={certificate.image}
                             alt={certificate.title}
                             className="certificate-image"
                         />
-                    </a>
+                         
+                        <div style={{display:"flex" , justifyContent:"center" ,alignItems:"center" ,padding:"1rem"}}>
+                         
+
+                        <a
+                        href={certificate.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="certificate-link"
+                         
+                         >
+                       <Button style={{ borderRadius: '6px' }}  label="View certificate"   className="btns"/>
+                       </a>
+                      </div>
                 </Panel>
             ))}
         </div>
