@@ -167,6 +167,10 @@ const skills = [
     name: "Tkinter",
     icon: "python/python-original.svg",
   },
+    {
+  name: "Wordpress",
+  icon: "wordpress/wordpress-plain.svg",
+  },
   {
   name: "Blender",
   icon: "blender/blender-original.svg",
@@ -183,6 +187,8 @@ const skills = [
   name: "C-language",
   icon: "c/c-original.svg",
   }
+
+ 
 ];
 
 const Skills = () => {
@@ -221,6 +227,8 @@ const Skills = () => {
                 {skill.name}
               </div>
             </div>
+
+            
               
             :
             <div className="skill-card" key={skill.name}>
